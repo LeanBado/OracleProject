@@ -1,48 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Victoriana Hand Made</title>
-    <link rel="stylesheet" href="style-home.css">
-</head>
 
-<body>
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width"> 
+        <title>Barbería Alura</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    </head>
 
-    <header>
-        <h1 class="titulo-principal">Victoriana Hand Made by Victoria Ramirez</h1>
-    </header>
+    <body>
+        <header>
+            <div class="caja">
+                <img src="imagenes/logo.jpg" alt="logo">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-        <img id="banner" src="banner/banner.jpg">
+        <img class="banner" src="banner/banner.jpg">
         
-        <div class="principal">
+        <main>
+            <section class="principal">
 
-            <h2 class="titulo-centralizado">Sobre Victoriana Hand Made</h2>
+                <h2 class="titulo-principal">Sobre Victoriana by Victoria Ramirez</h2>
 
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem laboriosam veritatis quidem atque voluptatem ea ratione praesentium deleniti blanditiis adipisci!<strong>Lorem, ipsum dolor.</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam sunt quis, sequi tempora vitae?</p>
+                <img class="utensilios"  src="imagenes/ppal.jpg" alt="imagen">
+    
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, necessitatibus! <strong>Lorem, ipsum dolor.</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, tempore illo iste omnis corporis error!</p>
+    
+                <p id="mision"><em>Lorem ipsum dolor sit amet.<strong>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dolorem non exercitationem?"</strong>.</em></p>
+    
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure dolore officia voluptates aut eum quis assumenda velit nulla aliquam expedita, eveniet architecto. Sapiente tempora autem laborum labore consectetur aperiam eius dolore maiores numquam culpa? Temporibus Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, modi?</p> 
+    
+            </section>
 
-            <p id="mision"><em>Nuestra misión es: <strong>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam sunt quis, sequi tempora vitae"</strong>.</em></p>
+            <section class="mapa">
+                <h3 class="titulo-principal">Nuestra Ubicación</h3>
+                <p>Nuestro local está ubicado en Olivos, Vicente Lopez</p>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum reiciendis hic non natus incidunt. Ab dolor molestias voluptates omnis et obcaecati ea incidunt ut eos nostrum delectus, minus esse provident?</p> 
+                <div class="mapa-contenido">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3287.3549670713287!2d-58.487893284429745!3d-34.519233660540536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb1482730b2ef%3A0xd2d465f4806bb851!2sAv.%20Maip%C3%BA%2C%20Vicente%20L%C3%B3pez%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1649969039095!5m2!1ses-419!2sar" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
 
-        </div>
 
-        <div class="diferenciales">
+            </section>
+            
+            <section class="diferenciales">
+    
+                <h3 class="titulo-principal">Te tratamos como te mereces:</h3>
+            
+                <div class="contenido-diferenciales">
+                    <ul class="lista-diferenciales">
+                        <li class="items">Atendido por la dueña</li>
+                        <li class="items">Compromiso</li>
+                        <li class="items">Localización</li>
+                        <li class="items">Profesionalismo</li>
+                        <li class="items">Puntualidad</li>
+                        <li class="items">Limpieza</li>
+                    </ul><img src="diferenciales/diferenciales.jpg" class="imagen-diferenciales">
+                </div>
+                <div class="video">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/QQvdik4xziY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                
+            </section>
 
-            <h3 class="titulo-centralizado">INSERTAR TEXTO</h3>
+
+            
+        </main>
         
-            <ul>
-                <li class="items">INSERTAR TEXTO</li>
-                <li class="items">INSERTAR TEXTO</li>
-                <li class="items">INSERTAR TEXTO</li>
-                <li class="items">INSERTAR TEXTO</li>
-            </ul>
-
-            <img src="/images/images.jpeg" class="imagenDif">
-
-        </div>
-        
+        <footer>
+            <img src="imagenes/logo.jpg" alt="logo">
+            <p class="copyright">&copy Copyright Vicuchi hand made - 2022</p>
+        </footer>
         
     </body>
 </html>
