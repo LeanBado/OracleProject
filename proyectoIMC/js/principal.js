@@ -3,12 +3,13 @@ botonAdicionar.addEventListener("click", function(evento){
     evento.preventDefault();
 
     var form = document.querySelector("#form-boton");
-    var tBody = document.querySelector("#tabla-pacientes");
     
     var nombre = form.nombre.value;
     var peso = form.peso.value;
     var altura = form.altura.value;
     var gordura = form.gordura.value
+
+    var tBody = document.querySelector("#tabla-pacientes");
 
     var pacienteTr = document.createElement("tr");
     var nombreTd = document.createElement("td");
