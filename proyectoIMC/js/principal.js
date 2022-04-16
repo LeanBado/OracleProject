@@ -22,11 +22,13 @@ botonAdicionar.addEventListener("click", function(evento){
     pesoTd.textContent = peso;
     alturaTd.textContent = altura;
     gorduraTd.textContent = gordura;
+    imcTd.textContent = calculoImc(peso, altura);
 
     pacienteTr.appendChild(nombreTd);
     pacienteTr.appendChild(pesoTd);
     pacienteTr.appendChild(alturaTd);
     pacienteTr.appendChild(gorduraTd);
+    pacienteTr.appendChild(imcTd);
 
     tBody.appendChild(pacienteTr);
 })
@@ -62,7 +64,11 @@ for(var contador = 0; contador <pacientes.length; contador++){
     }
 
     if(pesoEsValido && alturaEsValida){
-        var imc = peso / (altura * altura);
-        tdIMC.textContent = imc.toFixed(1);
+        tdIMC.textContent = calculoImc(peso, altura);
     }
+}
+
+function calculoImc(peso, altura){
+    var imc = peso / (altura * altura);
+    return imc.toFixed(1)
 }
