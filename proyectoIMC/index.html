@@ -27,6 +27,7 @@
 							<th>IMC</th>
 						</tr>
 					</thead>
+					<input class="filtro-pacientes" placeholder="Ingrese nombre de paciente">
 					<tbody id="tabla-pacientes">
 						<tr class="paciente">
 							<td class="info-nombre">Pablo</td>
@@ -73,10 +74,12 @@
 
 		<section class="container">
 			<h2 id="titulo-form">Adicionar nuevo paciente</h2>
+			<ul id="peso-error"></ul>
+			<ul id="altura-error"></ul>
 			<form id="form-boton">
 				<div class="grupo">
 					<label for="nombre">Nombre:</label>
-					<input id="nombre" name="nombre" type="text" placeholder="digite el nombre del paciente" class="campo">
+					<input id="nombre" name="nombre" type="text" placeholder="digite el nombre del paciente" class="campo" required>
 				</div>
 				<div class="grupo">
 					<label for="peso">Peso:</label>
@@ -95,5 +98,7 @@
 		</section>
 
 		<script src="js/principal.js"></script> 
+		<script src="js/eliminar.js"></script> 
+		<script src="js/filtro.js"></script> 
 	</body>
 </html>
