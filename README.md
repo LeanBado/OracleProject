@@ -1,1 +1,2 @@
-different exercises proposed by teachers between classes
+proyectoIMC - ejercicio principal
+victoriana - sólo html y css
